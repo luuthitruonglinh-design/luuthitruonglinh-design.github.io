@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;                          
+    background-image: url('dai duong.webp');      
+    background-size: cover;                 
+    background-position: center;            
+    background-repeat: no-repeat;           
+    overflow: hidden;                       
+}
+#shark {
+left: 300px;
+top: 400px;
+position: absolute;
+animation-name: shark;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-play-state: running;
+}
+@keyframes shark {
+    0%   { left: 20px;   top: 5px; transform: scaleX(1); }  
+    20%  { left: 450px;  top: 12px; transform: scaleX(1); }  
+    50%  { left: 1180px; top: 15px; transform: scaleX(1); }  
+    51%  { left: 1180px; top: 15px; transform: scaleX(-1); }
+    60%  { left: 950px;  top: 8px; transform: scaleX(-1); } 
+    80%  { left: 450px;  top: 0px; transform: scaleX(-1); } 
+    100% { left: 20px;   top: 5px; transform: scaleX(-1); } 
+}
+#diver2 {   
+    left: 1040px;
+    top: 380px;
+    position: absolute;
+animation-name: diver2;
+animation-duration: 15s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-play-state: running;}
+@keyframes diver2 {
+    0%   { left: 1030px; top: 380px; transform: scaleX(-1); }
+    20%  { left: 750px;  top: 350px; transform: scaleX(-1); }
+    40%  { left: 450px;  top: 320px; transform: scaleX(-1); }
+    50%  { left: 330px;  top: 300px; transform: scaleX(-1); } 
+    51%  { left: 330px;  top: 300px; transform: scaleX(1); }  
+    60%  { left: 450px;  top: 320px; transform: scaleX(1); }
+    80%  { left: 750px;  top: 350px; transform: scaleX(1); }
+    100% { left: 1030px; top: 380px; transform: scaleX(1); }
+}
+#diver3 {
+    left: 20px;
+    top: 250px;
+    position: absolute;
+animation-name: diver3;
+animation-duration: 17s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-play-state: running;}
+@keyframes diver3 {
+    0%   { left: 20px;  top: 250px; transform: scaleX(1); }
+    49%  { left: 100px; top: 400px; transform: scaleX(1); } 
+    50%  { left: 200px; top: 400px; transform: scaleX(-1); } 
+        70%  { left: 500px;  top: 250px; transform: scaleX(-1); } 
+
+    99%  { left: 20px;  top: 250px; transform: scaleX(-1); } 
+    100% { left: 20px;  top: 250px; transform: scaleX(1); }  
+}
+#diver1 {
+    left: 1180px;
+    top: 540px;
+    position: absolute;
+animation-name: diver1;
+animation-duration: 18s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-play-state: running;}
+
+@keyframes diver1 {
+       0%   { left: 1180px; top: 540px; transform: scaleX(-1); } 
+    20%  { left: 850px;  top: 560px; transform: scaleX(-1); }
+    40%  { left: 400px;  top: 520px; transform: scaleX(-1); } 
+    50%  { left: 20px;   top: 550px; transform: scaleX(-1); }
+    51%  { left: 20px;   top: 550px; transform: scaleX(1); }  
+    60%  { left: 350px;  top: 530px; transform: scaleX(1); } 
+    80%  { left: 780px;  top: 560px; transform: scaleX(1); } 
+    100% { left: 1180px; top: 540px; transform: scaleX(1); }  
+}
+#faintSchool {
+    position: absolute;
+    left: 900px;
+    top: 100px;
+    animation: faintSchool 16s linear infinite;
+}
+
+@keyframes faintSchool {
+    0%   { left: 900px; top: 170px; transform: scaleX(-1); } 
+    49%  { left: 100px; top: 220px; transform: scaleX(-1); }
+    50%  { left: 100px; top: 220px; transform: scaleX(1); }  
+    99%  { left: 900px; top: 170px; transform: scaleX(1); }
+    100% { left: 900px; top: 170px; transform: scaleX(-1); }
+}
+#goldFishSchool {
+    position: absolute;
+    left: 850px;
+    top: 380px;
+    animation: goldFishSchool   14s linear infinite;
+}
+
+@keyframes goldFishSchool {
+    0%   { left: 850px; top: 380px; transform: scaleX(-1); } 
+    49%  { left: 150px; top: 300px; transform: scaleX(-1); }
+    50%  { left: 150px; top: 300px; transform: scaleX(1); }  
+    99%  { left: 850px; top: 380px; transform: scaleX(1); }
+    100% { left: 850px; top: 380px; transform: scaleX(-1); }
+}
+#turtle {
+    left: 1150px;
+    top: 480px;
+    position: absolute;
+    animation-name: turtle;
+    animation-duration: 25s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes turtle {
+    0%   { left: 1150px; top: 480px; transform: scaleX(-1); } 
+    49%  { left: 50px;   top: 350px; transform: scaleX(-1); } 
+    50%  { left: 50px;   top: 350px; transform: scaleX(1); }  
+    99%  { left: 1150px; top: 480px; transform: scaleX(1); }  
+    100% { left: 1150px; top: 480px; transform: scaleX(-1); } 
+}
+body {
+    transition: background-image 0.5s ease-in-out;
+}
+#controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999; 
+    display: flex;
+    gap: 10px;
+}
+#controls button {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: blue;
+    border: 2px solid yellow;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+
+#controls button:hover {
+    background-color: blue;
+    transform: scale(1.05);
+}
+
+#controls button:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css27famiLy-Anton&dispLay=swap;');
+@import url('https://fonts.googleapis.com/css27family-Anton&family-Poppins:ital,wght@0,100:0,200;0,');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: "Poppins",sans-serif;
+    background-color: black;
+    color:white;
+    overflow-x: hidden;
+}
+.home_section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 2vw;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.sub_hero_text{
+    display: flex;
+    justify-self: flex-end;
+    font-size: 1vw;
+    font-weight: 400;
+}
+.sub_hero_textp{
+    width: 35vw;
+    margin-top: 5vh;
+
+}
+.nav_contact_link {
+    height: 5vh;
+    padding: 0.75ch 1.5vw;
+    border: 1px solid white;
+    border-radius: 20px;
+
+}
+.nav_contact_link:hover{
+    background-color: white;
+    color: black;
+}
+.hero_text{
+    font-family: "Aton",sans-serif;
+    font-size: 5vw;
+    line-height: 1;
+    text-transform: capitalize;
+}
+.about_section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;   
+justify-content: space-between;
+}
+.about_section img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+filter: brightness(0.4);
+}
+.about_span {
+z-index: 1;
+margin-left: 2vw;
+}
+.about_content{
+    z-index: 1;
+    margin-bottom: -30vh;
+    display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ gap: 5vh;
+}   
+.about_topics {
+width: 95%;
+display: flex;
+gap: 2vw;
+text-transform: uppercase;
+}
+.about_text{
+    font-size: 1.5vw;
+    width: 95%;
+}
+.SKILLS{
+    z-index: 1;
+    padding: 0 2.5%;
+font-family: "Anton",sans-serif;
+text-transform: uppercase;
+font-size: 2.2vw;
+display: flex;
+justify-content: flex-start;
+gap: 35vw;
+overflow: hidden;
+}
+.contact_section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.contact_section span{
+    position: absolute;
+    cursor: pointer;
+}
+.contact_section span:nth-child(1){
+    top: 20%;
+    left: 15%; 
+}
+.contact_section span:nth-child(2){
+    top: 20%;
+    right: 15%; 
+}
+.contact_section span:nth-child(3){
+    top: 75%;
+    left: 15%; 
+}
+.contact_section span:nth-child(4){
+    top: 75%;
+    right: 15%; 
+}
+.contact_section span:nth-child(5){
+    top: 50%;
+    right: 50%; 
+    transform: translate(50%, -50%);
+    border: 1px solid white;
+    padding: 1vw 1.5vw  ;
+border-radius: 20%;
+}
+.footer{
+    width: 100vw;
+    height:40h;
+    padding: 0 10vw;
+    display: grid;
+    grid-template-columns:10vw 10vw 5vw 5vw;
+    gap: 18vw;
+    align-items: center;
+    font-size: 1vw; 
+}
+.footer_title{
+font-size: 5vw;
+line-height: 1;
+font-family: "Anton", sans-serif;
+}
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.footer div span{
+    cursor: pointer;
+
+}
+.footer div span:hover {
+    text-decoration: underline;
+}
+.MERMORIES {
+    font-family: "Anton", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: 5vh 2vw;
+}
+.MEMORIES_TITLE{
+   font-size: 4vw;
+text-transform: uppercase;
+}
+.MERMORIES_CONTAINER{
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 35vw 1fr;
+    grid-gap: 1vw;
+}
+.sub_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+.MEMORIES {
+    position: relative;
+    padding: 1vw;
+
+}
+.MERMORIES_CONTAINER span {
+ font-family: "Poppins", sans-serif;
+z-index: 2;
+font-size: 5vw;
+position: absolute;
+bottom: 0;
+}
+.MEMORIES img{
+    z-index: 1;
+   position: static;
+    top: 0;
+    left: 0;
+ width: 40vw;
+ height: 40vh;
+ object-fit: cover;
+ filter: brightness(0.9);
+
+}

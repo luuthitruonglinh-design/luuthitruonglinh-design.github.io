@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ho ca vui ve</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div id="content">
+        <div id="shark"><img src="shark.png"width="auto" height="auto" alt="shark"></div>
+        <div id="turtle"><img src="turtle.png" alt="turtle"></div>
+          <div id="diver1"><img src="diver1.png" alt="diver1"></div>
+          <div id="diver2"><img src="diver2.png" alt="diver2"></div>
+            <div id="diver3"><img src="diver3.png" alt="diver3"></div>
+              <div id="faintSchool"><img src="faintSchool.png" alt="faintSchool"></div>
+                <div id="goldFishSchool"><img src="goldFishSchool.png" alt="goldFishSchool"></div>
+    </div>
+
+     <div id="controls">
+        <button id="bt-bg" onclick="changeBackground()">Đổi cảnh nền</button>
+        <button id="bt-music" onclick="toggleMusic()">Phát nhạc</button>
+    </div>
+    <audio id="bg-music" loop>
+        <source src="nhac.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        const backgrounds = [
+            "url('daiduong1.jpg')",
+            "url('daiduong2.jpg')",
+            "url('daiduong3.webp')",
+            "url('daiduong4.jpg')"
+        ];
+        let currentBgIndex = 0;
+
+        function changeBackground() {
+            currentBgIndex = (currentBgIndex + 1) % backgrounds.length;
+            
+            document.body.style.backgroundImage = backgrounds[currentBgIndex];
+        }
+        const music = document.getElementById("bg-music");
+        const btMusic = document.getElementById("bt-music");
+        function toggleMusic() {
+            if (music.paused) {
+                music.play();
+                btMusic.innerText = "Tắt nhạc";
+            } else {
+                music.pause();
+                btMusic.innerText = "Phát nhạc";
+            }
+        }
+    </script>
+
+</body>
+</html>
